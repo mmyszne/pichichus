@@ -8,10 +8,11 @@ namespace VeterinariaPichichus.Context
         public DbSet<Duenio> Duenios { get; set; }
         public DbSet<Mascota> Mascotas { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("Data Source = ZAPHIRA\\SQLEXPRESS ; Initial Catalog = Veterinaria;  Encrypt= true;trustservercertificate =true; Integrated Security = true");
-        }
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+
+        //    optionsBuilder.UseSqlServer("Data Source = MOURINOOS\\AXSQLEXPRESS ; Initial Catalog = Veterinaria;  Encrypt= true;trustservercertificate =true; Integrated Security = true");
+        //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
